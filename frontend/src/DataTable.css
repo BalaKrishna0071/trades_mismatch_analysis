@@ -1,0 +1,132 @@
+body {
+  display: flex;
+  justify-content: center;   /* center horizontally */
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f4f6f8;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* horizontal center */
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding-top: 2px;
+}
+
+/* Center the upload box */
+.file-upload-wrapper {
+  margin: 20px auto;
+}
+/* TABLE CONTAINER */
+.table-container {
+  width: 60%;
+  margin: 20px auto;
+  border-radius: 10px;
+  overflow: auto;       /* enable vertical scroll */
+  max-height: 630px;     /* table height before scrolling */
+}
+.table-container TableBody{
+     border-radius: 9px;
+}
+
+/* HEADER */
+.table-header {
+  background-color: #1976d2;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.refresh-time {
+  width: 60%;
+  margin: 10px auto;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #1976d2;
+  text-align: center;
+  font-style: normal;             /* change from italic to normal */
+  font-family: 'Roboto', sans-serif;  /* modern clean font */
+  font-weight: 500;               /* medium weight */
+  background-color: #e3f2fd;
+  border-radius: 9px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid #bbdefb;
+}
+.refresh-time:hover {
+  background-color: #d0e3fb;
+  cursor: default;
+}
+
+
+.main-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: #1976d2;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+.table-header th {
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  padding: 8px 10px;
+}
+
+/* ROWS */
+.table-row:nth-child(odd) {
+  background-color: #f7f9fc;
+}
+
+.table-row:hover {
+  background-color: #e3f2fd;
+}
+
+/* CELLS */
+.table-cell {
+  font-size: 13px;
+  text-align: center;
+  padding: 6px 10px;
+
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.search-wrapper {
+  display: flex;
+  justify-content: center;   /* center horizontally */
+  margin-bottom: 10px;
+}
+
+.search-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.search-input {
+  padding: 6px 10px;
+  color: green;
+  background-color: white;
+  border-radius: 9px;
+  border: 1px solid #ccc;
+  transition: all 0.2s ease;
+}
+
+.search-input:hover {
+  border-color: blue;
+  transform: scale(1.02);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: blue;
+  box-shadow: 0 0 5px rgba(0,0,255,0.3);
+}

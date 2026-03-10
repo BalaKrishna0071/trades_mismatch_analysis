@@ -1,0 +1,64 @@
+.file-upload-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 15px;
+  border: 2px dashed #dcdcdc;
+  border-radius: 8px;
+  background-color: #fafafa;
+  width: fit-content;
+}
+
+/* File input */
+.file-upload-wrapper input[type="file"] {
+  font-size: 14px;
+  color: black;
+  cursor: pointer;
+}
+
+/* Upload button */
+.file-upload-wrapper button {
+  padding: 10px 18px;
+  background-color: #28a745;
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+
+/* Hover effect */
+.file-upload-wrapper button:hover {
+  background-color: #218838;
+  transform: scale(1.05); /* subtle zoom */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* subtle shadow */
+}
+
+/* Click effect */
+.file-upload-wrapper button:active {
+  transform: scale(0.96);
+}
+
+
+.file-upload-wrapper button.reset-btn {
+  padding: 10px 18px;
+  background-color: #dc3545; /* red background for reset */
+  color: #fff; /* white text for contrast */
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.file-upload-wrapper button.reset-btn:hover {
+  background-color: #c82333; /* slightly darker red */
+  transform: scale(1.05); /* subtle zoom */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* subtle shadow */
+}
