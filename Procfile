@@ -1,1 +1,1 @@
-gunicorn -b 0.0.0.0:$PORT main:app
+gunicorn -b 0.0.0.0:$PORT app_hosting:app
